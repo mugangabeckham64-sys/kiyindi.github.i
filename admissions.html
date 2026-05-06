@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions — Kiyndi Foundation School</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <a href="index.html" class="header-brand">
+      <img src="WhatsApp Image 2026-04-07 at 3.45.04 PM.jpeg" alt="Kiyndi Logo">
+      <div class="brand-text">
+        <div class="school-name">Kiyndi Foundation School</div>
+        <div class="school-tagline">Excellence · Discipline · Innovation</div>
+      </div>
+    </a>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admissions.html" class="active">Admissions</a>
+      <a href="contact.html">Contact</a>
+      <a href="admissions.html" class="nav-cta">Apply Now</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right" style="font-size:9px"></i>
+        <span>Admissions</span>
+      </div>
+      <div class="section-tag">Join Our Community</div>
+      <h1>Admissions at<br>Kiyndi Foundation</h1>
+      <p>We welcome students from all backgrounds who are ready to learn, grow, and become responsible citizens. Admissions are open throughout the year.</p>
+    </div>
+  </div>
+
+  <!-- ADMISSIONS LAYOUT -->
+  <div class="admissions-layout">
+
+    <!-- LEFT: Requirements -->
+    <div>
+      <div class="requirements-card reveal">
+        <h2><i class="fas fa-clipboard-list" style="margin-right:10px"></i>Admission Requirements</h2>
+        <ul class="req-list">
+          <li><i class="fas fa-check"></i> Completed application form</li>
+          <li><i class="fas fa-check"></i> Recent academic transcripts</li>
+          <li><i class="fas fa-check"></i> 2 passport-size photos</li>
+          <li><i class="fas fa-check"></i> Copy of birth certificate</li>
+          <li><i class="fas fa-check"></i> Parent/Guardian ID copy</li>
+          <li><i class="fas fa-check"></i> Medical/immunization record</li>
+        </ul>
+        <div class="info-box">
+          <strong>Need help?</strong> Contact our admissions office via WhatsApp at <strong>+256 700 123 456</strong> or email us at <strong>info@kiyndifoundationschool.com</strong>
+        </div>
+      </div>
+
+      <!-- Process steps -->
+      <div style="margin-top:1.5rem;background:var(--gray-light);border-radius:16px;padding:1.75rem" class="reveal reveal-delay-1">
+        <h3 style="font-family:'Playfair Display',serif;color:var(--navy);font-size:1.1rem;margin-bottom:1.25rem">
+          <i class="fas fa-route" style="color:var(--gold);margin-right:8px"></i>Admissions Process
+        </h3>
+        <div style="display:flex;flex-direction:column;gap:0.75rem">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:30px;height:30px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:700;font-size:0.8rem;flex-shrink:0">1</div>
+            <span style="font-size:0.9rem;color:#444">Submit the online application form below</span>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:30px;height:30px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:700;font-size:0.8rem;flex-shrink:0">2</div>
+            <span style="font-size:0.9rem;color:#444">Our team will review and contact you within 48 hours</span>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:30px;height:30px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:700;font-size:0.8rem;flex-shrink:0">3</div>
+            <span style="font-size:0.9rem;color:#444">Bring documents for in-person verification</span>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:30px;height:30px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--navy);font-weight:700;font-size:0.8rem;flex-shrink:0">✓</div>
+            <span style="font-size:0.9rem;color:#444">Enrollment confirmed — welcome to the Kiyndi family!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="form-card reveal reveal-delay-1">
+      <h2>Online Application Form</h2>
+      <p class="form-subtitle">Fill in the details below and our admissions team will be in touch shortly.</p>
+
+      <div id="admission-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" id="fname" placeholder="e.g. Amara" required>
+          </div>
+          <div class="form-group">
+            <label>Surname *</label>
+            <input type="text" id="lname" placeholder="e.g. Nakato" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Date of Birth *</label>
+            <input type="date" id="dob" required>
+          </div>
+          <div class="form-group">
+            <label>Grade / Class Applying For *</label>
+            <select id="grade" required>
+              <option value="">Select a class</option>
+              <option>Primary 1</option>
+              <option>Primary 2</option>
+              <option>Primary 3</option>
+              <option>Primary 4</option>
+              <option>Primary 5</option>
+              <option>Primary 6</option>
+              <option>Primary 7</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Parent / Guardian Name *</label>
+            <input type="text" id="guardian" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" id="phone" placeholder="+256 700 000 000" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Residential Address</label>
+          <input type="text" id="address" placeholder="e.g. Kawempe, Kampala">
+        </div>
+        <div class="form-group">
+          <label>Additional Information</label>
+          <textarea id="notes" placeholder="Any special needs, previous school, or questions for us..."></textarea>
+        </div>
+        <button class="btn-submit" onclick="submitAdmission()">
+          <i class="fas fa-paper-plane"></i> Submit Application
+        </button>
+      </div>
+
+      <div class="form-success" id="form-success">
+        <i class="fas fa-circle-check"></i>
+        <h3>Application Received!</h3>
+        <p>Thank you for applying to Kiyndi Foundation School. Our admissions team will contact you within 48 hours.</p>
+        <a href="index.html" class="btn-primary" style="margin-top:1.5rem;display:inline-flex">Back to Home</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="school-name-footer">Kiyndi Foundation School</div>
+        <p>Empowering students with quality education, strong values, and the skills to thrive in an ever-changing world.</p>
+        <div class="social-icons" style="margin-top:1.25rem">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px"></i>info@kiyndifoundationschool.com</p>
+        <p style="margin-top:0.5rem"><i class="fab fa-whatsapp" style="color:var(--gold);margin-right:8px"></i>+256 700 123 456</p>
+        <p style="margin-top:0.5rem"><i class="fas fa-location-dot" style="color:var(--gold);margin-right:8px"></i>Plot 45, Kawempe, Kampala</p>
+      </div>
+      <div class="footer-col">
+        <h4>School Hours</h4>
+        <p>Monday – Friday<br><strong style="color:white">7:30am – 5:00pm</strong></p>
+        <p style="margin-top:0.75rem">Saturday<br><strong style="color:white">8:00am – 12:00pm</strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Kiyndi Foundation School · All Rights Reserved</span>
+      <span>Kampala, Uganda</span>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 50));
+    function toggleMenu() {
+      document.getElementById('main-nav').classList.toggle('open');
+      document.getElementById('hamburger').classList.toggle('open');
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    function submitAdmission() {
+      const fname = document.getElementById('fname').value.trim();
+      const lname = document.getElementById('lname').value.trim();
+      const dob = document.getElementById('dob').value;
+      const guardian = document.getElementById('guardian').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const grade = document.getElementById('grade').value;
+
+      if (!fname || !lname || !dob || !guardian || !phone || !grade) {
+        alert('Please fill in all required fields marked with *');
+        return;
+      }
+      document.getElementById('admission-form').style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
